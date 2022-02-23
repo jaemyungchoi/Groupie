@@ -1,0 +1,27 @@
+version: "2"
+services:
+    310-project:
+        build: .
+        ports:
+            - "8443:8443" # provide direct access to web server
+        volumes:
+            - maven-cache:/root/.m2
+            - .:/usr/local/310-project
+        environment:
+            SCREEN_RESOLUTION: "1280x720x24"
+            ENABLE_VNC: "true"
+    novnc:
+        image: "bonigarcia/novnc:1.1.0"
+        depends_on:
+            - "310-project"
+        ports:
+            - "6080:6080" # provide VNC access to container
+        environment:
+            AUTOCONNECT: "true"
+            VIEW_ONLY: "false"
+            VNC_PASSWORD: "selenoid"
+            VNC_SERVER: "310-project:5900"
+            NOVNC_TAG: "v1.3.0-beta"
+            WEBSOCKIFY_TAG: "v0.10.0"
+volumes:
+    maven-cache: {}

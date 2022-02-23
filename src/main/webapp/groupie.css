@@ -1,0 +1,45 @@
+ #groupieHeader {
+     width           : 100%;
+     height          : 4rem;
+     background-color: #990000;
+     color           : #FFCC00;
+     margin-bottom: -4rem;
+ }
+
+ #groupieHeader>p {
+     color       : white;
+     margin-right: 3rem;
+     line-height: 4rem;
+     float       : right;
+ }
+
+ #groupieHeader>p>a {
+     text-decoration: none;
+     color          : #FFCC00;
+ }
+
+ #groupieLogo {
+     max-height: 50px;
+     padding   : 5px;
+     float     : left;
+     font-size : 15px;
+ }
+
+ .groupie.content {
+     min-height: 100vh;
+     box-sizing: border-box;
+     padding-top: 6rem;
+     padding-bottom: 6rem;
+ }
+
+ #groupieFooter {
+     background-color: #990000;
+     color           : #FFCC00;
+     text-align      : center;
+     height: 3rem;
+     margin-top: -3rem;
+ }
+
+ #groupieFooter>p {
+    line-height: 3rem;
+}

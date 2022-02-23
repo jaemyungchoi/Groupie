@@ -1,0 +1,34 @@
+{
+  "name": "react-widgets",
+  "source": "src/index.html",
+  "targets": {
+    "widgets": {
+      "source": [
+        "src/hello-world-widget.js",
+        "src/search-box-widget.js",
+        "src/detail-render.js",
+        "src/proposal-list-widget.js"
+      ],
+      "distDir": "../src/main/webapp/react-widget-static"
+    }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "axios": "^0.23.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-big-calendar": "^0.38.1",
+    "react-dom": "^17.0.2",
+    "semantic-ui-calendar-react": "^0.15.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "shx": "^0.3.3"
+  }
+}

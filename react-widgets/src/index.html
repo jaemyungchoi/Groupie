@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Proposal Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id='proposal' data-uid='1'
+        data-proposal='{"id":5,"owner":{"id":1,"username":"111"},"title":"123","events":[{"id":9,"tmEventKey":"Z7r9jZ1AdFUqk","votes":[]},{"id":10,"tmEventKey":"G5v0Zpsu1MKTl","votes":[]},{"id":11,"tmEventKey":"G5vYZps10TSsn","votes":[]},{"id":12,"tmEventKey":"G5dIZpYhpTdMS","votes":[]}],"invitedUsers":[{"id":2,"username":"222"}],"acceptedUsers":[],"declinedUsers":[],"hiddenUsers":[]}'
+        data-error=''></div>
+    <div class="ui container">
+        <div id='tm-event'></div>
+        <div id='proposal-list'
+            data-proposals='[{"id":1,"owner":{"id":1,"username":"111"},"title":"213","events":[{"id":1,"tmEventKey":"G5vYZps10TSsn","votes":[]},{"id":2,"tmEventKey":"G5v0Zpsuk-KUz","votes":[]}],"invitedUsers":[{"id":2,"username":"222"}],"acceptedUsers":[],"declinedUsers":[],"pendingUsers":[{"id":1,"username":"111"},{"id":2,"username":"222"}],"finalizedEvent":null,"hiddenUsers":[],"createdAt":"2021-12-02 00:05:40"},{"id":2,"owner":{"id":1,"username":"111"},"title":"123","events":[{"id":3,"tmEventKey":"G5vYZps10TSsn","votes":[]}],"invitedUsers":[{"id":2,"username":"222"}],"acceptedUsers":[{"id":1,"username":"111"}],"declinedUsers":[],"pendingUsers":[{"id":2,"username":"222"}],"finalizedEvent":{"id":3,"tmEventKey":"G5vYZps10TSsn","votes":[]},"hiddenUsers":[],"createdAt":"2021-12-02 00:05:47"},{"id":3,"owner":{"id":1,"username":"111"},"title":"test 2","events":[{"id":4,"tmEventKey":"G5vYZps10TSsn","votes":[]}],"invitedUsers":[{"id":2,"username":"222"}],"acceptedUsers":[],"declinedUsers":[],"pendingUsers":[{"id":1,"username":"111"},{"id":2,"username":"222"}],"finalizedEvent":null,"hiddenUsers":[],"createdAt":"2021-12-02 01:53:09"}]'
+            data-drafts='[{"id":1,"owner":{"id":1,"username":"111"},"title":"test 123","jsonData":"{\"title\":\"test 123\",\"users\":[],\"events\":[]}"}]'
+            data-error=''
+            data-uid='1'></div>
+    </div>
+
+    <script type="module" src="detail-render.js"></script>
+    <script type="module" src="search-box-widget.js"></script>
+    <script type="module" src="proposal-list-widget.js"></script>
+    <link async rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2/dist/semantic.min.css" />
+</body>
+
+</html>
